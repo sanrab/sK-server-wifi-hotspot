@@ -1,0 +1,15 @@
+Wi-fi hotspot with signalK server on Raspberry 3B/3B+
+
+- install RaspbianOS Lite (32 or 64 bit) with rpi-imager or Balena Etcher on SD card with enabled ssh
+- update RaspbianOS (sudo apt update && sudo apt full-upgrade -y)
+- install signalk server (https://github.com/SignalK/signalk-server/blob/master/docs/src/installation/raspberry_pi_installation.md)
+- optional: install netcat (sudo apt install netcat) to check TCP port flow with NMEA data (nc localhost 10110)
+- optional: install minicom (sudo apt install minicom) to check serial ports
+- install Raspap (https://raspap.com/) (SSID, IP:10.3.141.1)
+- reboot with ethernet connected with router
+
+- from another PC ssh to raspberry
+- open browser in http://10.3.141.1:3000
+- update signalk server software
+- optional: install desired signalK plugins
+
